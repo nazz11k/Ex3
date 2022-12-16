@@ -11,10 +11,8 @@ def simple_numbers_generator():
 
 def sum_of_digits(number):
     result = 0
-    while number > 0:
-        result += number % 10
-        number //= 10
-    return result
+    for digit in str(number):
+        result += int(digit)
 
 
 def find_required_numbers(n):
